@@ -5,9 +5,7 @@ set -eu
 SETTINGS_FILE=$1
 echo "Settings file: $SETTINGS_FILE"
 
-echo "Enter secret: "
-read -r SECRET
-
+SECRET=$MDAH_SECRET
 echo "Using secret: $SECRET"
 
 sed -Ei "s/nosenpaithisisoursecret/$SECRET/g" "$SETTINGS_FILE"

@@ -1,0 +1,7 @@
+build:
+  docker:
+    mdah: Dockerfile
+
+run:
+  mdah: /mangahome/read-settings-and-start.sh  /mangahome/settings.json
+
